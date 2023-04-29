@@ -1,7 +1,9 @@
 # HCMUT_PPL_Sem222_MT22
-MT22 is a C-like language. It is similar enough to C to feel familiar, but different enough to give you some sense of alternatives.
+Building MT22, a C-like language
 
 ## About the Project
+MT22 is a C-like language. It is similar enough to C to feel familiar, but different enough to give you some sense of alternatives.
+
 This is my Principle of Programming Language's assignment. In this assignment, I was asked to build a C-like programming language (MT22) from scratch. The assignment is divided into 4 phases:
 
 1. **Lexer and Parser:** Teach your language how to identify tokens and lexemes
@@ -69,7 +71,7 @@ The **testcases** will then be exported to files in **folder testcases** while t
   In every test files, I have already included 100 testcases each. Feel free to use to test your system _(No 100% guarantee though)_
  
   ### Make your own testcase
-  One example of how to test your code using [src/test/CheckerSuiteone.py](src/test/CheckerSuiteone.py). This will do ** 1 testcase** for your system, you just need to modify **2 parts** in this file:
+  One example of how to test your code using [src/test/CheckerSuiteone.py](src/test/CheckerSuiteone.py). This will do **1 testcase** for your system, you just need to modify **2 parts** in this file:
   1. _Input:_ your AST tree or source functions (Checker will receive both formats) 
   2. _Expect:_ None or the error your static checker will throw out (your expected result)
 
