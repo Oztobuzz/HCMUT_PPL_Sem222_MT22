@@ -1,0 +1,8 @@
+Program([
+	VarDecl(a, IntegerType)
+	VarDecl(_bc, IntegerType)
+	VarDecl(___90, IntegerType)
+	VarDecl(a, ArrayType([12, 2, 3], StringType))
+	VarDecl(___, ArrayType([12, 2, 3], StringType))
+	VarDecl(__c__, ArrayType([12, 2, 3], StringType))
+])

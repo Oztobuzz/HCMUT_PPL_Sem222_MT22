@@ -1,0 +1,6 @@
+
+        x, y: integer = 1*2, 2+3;
+        a: string = "abc" :: "def";
+        d: integer = a[1+2, 1*5];
+        c: string = a(1, f("abc"));
+        

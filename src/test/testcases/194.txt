@@ -1,0 +1,6 @@
+Program([
+	VarDecl(y, IntegerType, IntegerLit(2))
+	VarDecl(z, IntegerType, IntegerLit(3))
+	VarDecl(a, AutoType, UnExpr(!, BooleanLit(True)))
+	VarDecl(b, AutoType, UnExpr(!, IntegerLit(4)))
+])

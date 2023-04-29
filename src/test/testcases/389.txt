@@ -1,0 +1,15 @@
+
+        main: function integer(){
+            isBad: boolean = true;
+            while(isBad == true){
+                print(a&&b||c);
+                res: integer = rand(1,200);
+                if (res == 69) break;
+                else{
+                    for(i = 1, i < 10, i+1){
+                        print(a<=!c::i);
+                    }
+                }
+            }
+        }
+        

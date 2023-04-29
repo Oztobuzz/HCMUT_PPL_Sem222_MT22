@@ -1,0 +1,8 @@
+func: function string (pa1 : float, out pa2: boolean){
+            a:integer = pa1;
+            while (a <= 3.E-2) {
+                a = a + 1;
+                if (a != 0) continue;
+                else break;
+            }
+        }

@@ -1,0 +1,3 @@
+Program([
+	VarDecl(x, AutoType, ArrayLit([IntegerLit(1), IntegerLit(2), UnExpr(-, IntegerLit(4))]))
+])

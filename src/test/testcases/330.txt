@@ -1,0 +1,4 @@
+
+        a:auto = (arr[0] + foo(3));
+        b:integer = (arr[1,2] + arr[0,2_0]) / (foo(1) + bar());
+        

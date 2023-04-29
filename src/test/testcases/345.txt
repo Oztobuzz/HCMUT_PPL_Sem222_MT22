@@ -1,0 +1,6 @@
+
+        main : function void () {
+            a = _09 + b - (2%3);
+            arr[0, 1_2] = .e-23;
+        }
+        

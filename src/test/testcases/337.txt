@@ -1,0 +1,4 @@
+
+        a:string = a::b<=c&&d+e*f || !false;
+        b:auto = -1/2-3||4!=5::6;
+        

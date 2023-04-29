@@ -1,0 +1,6 @@
+
+        main : function void () {
+            if (a) a=b;
+            if (b) {a=b;}
+        }
+        

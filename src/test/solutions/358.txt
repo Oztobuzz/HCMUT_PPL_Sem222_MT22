@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([IfStmt(IntegerLit(1), BlockStmt([IfStmt(IntegerLit(2), IfStmt(IntegerLit(3), IfStmt(IntegerLit(4), BlockStmt([]), ReturnStmt())))]), BlockStmt([IfStmt(IntegerLit(2), IfStmt(IntegerLit(3), BlockStmt([AssignStmt(Id(a), BinExpr(==, Id(b), Id(c))), ContinueStmt()])))]))]))
+])

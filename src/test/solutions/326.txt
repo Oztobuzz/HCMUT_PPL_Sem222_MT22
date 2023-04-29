@@ -1,0 +1,5 @@
+Program([
+	VarDecl(a, BooleanType, UnExpr(!, Id(a)))
+	VarDecl(b, BooleanType, UnExpr(!, BooleanLit(False)))
+	VarDecl(b, BooleanType, UnExpr(!, ArrayCell(arr, [BooleanLit(True)])))
+])

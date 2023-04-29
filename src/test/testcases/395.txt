@@ -1,0 +1,5 @@
+
+        main: function void() {
+                a: auto = "string"::a&&c+2*3==b-2*!-b[1,2,3]||d;
+        }
+        

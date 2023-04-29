@@ -1,0 +1,1 @@
+Type mismatch in Variable Declaration: VarDecl(z, IntegerType, StringLit(rasputin))

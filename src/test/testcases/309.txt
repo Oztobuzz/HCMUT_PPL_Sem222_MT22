@@ -1,0 +1,10 @@
+main: function void () {
+            a: integer;
+            _bc: float;
+            ___90: string;
+            _____: boolean;
+            String: auto;       //keyword vs ID
+            ARRAY: array[0] of float;
+            Array: array[1,2,3_1] of integer;
+            arrAy: array[1_2_3] of string;
+        }

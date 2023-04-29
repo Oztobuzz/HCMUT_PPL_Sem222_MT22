@@ -1,0 +1,5 @@
+
+        main: function void() {
+            a: boolean = (a == b) && ((f != r) || c != foo() && d) != var[0];
+        }
+        

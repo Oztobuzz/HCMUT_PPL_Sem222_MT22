@@ -1,0 +1,6 @@
+
+        main : function void () {
+            a = b;
+            __a = ___;
+        }
+        

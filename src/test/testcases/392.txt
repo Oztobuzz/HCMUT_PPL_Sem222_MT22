@@ -1,0 +1,9 @@
+
+        main: function void() {
+            do {
+                do {
+
+                } while(true);
+            } while (true);
+        }
+        

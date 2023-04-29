@@ -1,0 +1,3 @@
+Program([
+	VarDecl(x, ArrayType([3], FloatType), ArrayLit([FloatLit(1), IntegerLit(2), UnExpr(-, IntegerLit(4))]))
+])

@@ -1,0 +1,19 @@
+
+        count: integer = 0;
+        loop_cond: boolean = true; 
+        main: function void(){
+            while(loop_cond)
+                if (count % 12 == 0)
+                    do{
+                        for (i=0, i<=4, i+1){
+                            if (i%2==0)
+                                arr[i] = (arr[i]+incr)*(4&&a)%2;
+                            else
+                                {
+                                    foo("string\"", _0id, "string\t\"");
+                                }
+                        }
+                    } while (count <= true || false);
+            return arr[main(foo(arr[main()]))];
+        }
+        

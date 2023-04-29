@@ -1,0 +1,6 @@
+
+                Pleasesaveme: function auto() {
+                        return true;
+                        return "abc";
+                }
+                

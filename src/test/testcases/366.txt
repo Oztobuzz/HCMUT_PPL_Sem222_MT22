@@ -1,0 +1,13 @@
+
+        main : function void () {
+            do{
+                do{
+                    do{
+                        return a!=!c;
+                    }while (3);
+                }
+                while (2);
+            }
+            while (1);
+        }
+        

@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(mret), FuncCall(foo, [IntegerLit(1), StringLit(str), FuncCall(foo, [IntegerLit(3), IntegerLit(4), IntegerLit(5)]), ArrayLit([IntegerLit(1), IntegerLit(2)])])), AssignStmt(Id(eret), FuncCall(foo, []))]))
+])

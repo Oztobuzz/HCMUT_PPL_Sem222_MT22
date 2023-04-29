@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, BooleanType, ArrayLit([IntegerLit(12), FloatLit(0.0), BooleanLit(False), StringLit(string)]))
+	VarDecl(a, BooleanType, ArrayLit([BinExpr(+, Id(a), Id(b)), BinExpr(==, Id(_40), Id(c)), UnExpr(!, BooleanLit(False)), StringLit(string\nline)]))
+])

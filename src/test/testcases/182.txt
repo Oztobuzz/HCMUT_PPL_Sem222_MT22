@@ -1,0 +1,12 @@
+
+    testfunc: function integer (c: string) {
+        do {
+            readString("abc");
+            c = c :: "abc";
+            printString(c);
+        } while (c != "" );
+        return 1;
+    }
+    main: function void () {
+        testfunc();
+}

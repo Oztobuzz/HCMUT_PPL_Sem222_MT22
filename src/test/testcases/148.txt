@@ -1,0 +1,9 @@
+
+                main: function void() {
+                        a: boolean = true;
+                        a = f1(1,2,3);
+                }
+                f1: function auto(x: float, y: float, z: float) {
+                        return x + y + z;
+                }
+                

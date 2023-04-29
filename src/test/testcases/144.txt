@@ -1,0 +1,10 @@
+
+                main: function void() {
+                        a: auto = {1, 2};
+                        a[f1(1,2,3)] = 2;
+                        x: string = true;
+                }
+                f1: function auto(x: float, y: float, z: float) {
+                        return x + y + z;
+                }
+                

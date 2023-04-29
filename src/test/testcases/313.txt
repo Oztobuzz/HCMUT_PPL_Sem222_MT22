@@ -1,0 +1,4 @@
+a: string = z;
+        a,b,c : float = 1,2,3;
+        a,b,c,d: boolean = a+b, 2==3, !true, arr[0,2];
+        

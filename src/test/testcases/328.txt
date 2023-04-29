@@ -1,0 +1,6 @@
+
+        d:boolean = true&&false||arr[0];
+        e:auto = 1-foo(2*a)+arr[b/2]%3;
+        f:boolean = !bar();
+        g:integer = arr[-2];
+        

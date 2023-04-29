@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([IfStmt(Id(a), AssignStmt(Id(a), Id(b)), IfStmt(Id(b), BlockStmt([AssignStmt(Id(a), Id(b))]), BlockStmt([]))), IfStmt(Id(b), BlockStmt([]), BlockStmt([]))]))
+])

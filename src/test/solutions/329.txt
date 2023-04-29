@@ -1,0 +1,6 @@
+Program([
+	VarDecl(a, AutoType, BinExpr(+, Id(a), Id(b)))
+	VarDecl(b, IntegerType, BinExpr(*, IntegerLit(2), BinExpr(-, IntegerLit(12), Id(__9id))))
+	VarDecl(c, FloatType, BinExpr(%, BinExpr(*, IntegerLit(2), BinExpr(+, BinExpr(-, IntegerLit(3), Id(a)), BinExpr(/, BinExpr(-, Id(b), Id(c)), IntegerLit(2)))), IntegerLit(3)))
+	VarDecl(d, AutoType, BinExpr(/, IntegerLit(2), BinExpr(+, IntegerLit(2), BinExpr(*, IntegerLit(2), BinExpr(%, IntegerLit(2), BinExpr(/, IntegerLit(2), IntegerLit(0)))))))
+])

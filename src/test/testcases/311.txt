@@ -1,0 +1,3 @@
+_var_ : auto = "string\"Inner\"";
+        a, b, ___90 : integer = 1, a+b, a==b;
+        

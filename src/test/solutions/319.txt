@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(func, StringType, [Param(pa1, FloatType), OutParam(pa2, BooleanType)], None, BlockStmt([VarDecl(a, IntegerType, Id(pa1)), WhileStmt(BinExpr(<=, Id(a), FloatLit(0.03)), BlockStmt([AssignStmt(Id(a), BinExpr(+, Id(a), IntegerLit(1))), IfStmt(BinExpr(!=, Id(a), IntegerLit(0)), ContinueStmt(), BreakStmt())]))]))
+	VarDecl(arr, ArrayType([2, 22], IntegerType), ArrayLit([FloatLit(1.2), FloatLit(0.0), BooleanLit(False)]))
+	FuncDecl(func, StringType, [Param(pa1, FloatType), OutParam(pa2, BooleanType)], None, BlockStmt([VarDecl(a, IntegerType, Id(pa1)), IfStmt(BinExpr(<=, Id(a), FloatLit(0.03)), ReturnStmt(BooleanLit(True)), BlockStmt([AssignStmt(Id(a), IntegerLit(0)), ReturnStmt(BooleanLit(False))]))]))
+])

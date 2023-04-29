@@ -1,0 +1,5 @@
+Program([
+	VarDecl(count, IntegerType, IntegerLit(0))
+	VarDecl(loop_cond, BooleanType, BooleanLit(True))
+	FuncDecl(main, VoidType, [], None, BlockStmt([WhileStmt(Id(loop_cond), IfStmt(BinExpr(==, BinExpr(%, Id(count), IntegerLit(12)), IntegerLit(0)), ContinueStmt())), DoWhileStmt(BinExpr(<=, Id(count), BinExpr(||, BooleanLit(True), BooleanLit(False))), BlockStmt([])), ReturnStmt(ArrayCell(arr, [FuncCall(main, [FuncCall(foo, [ArrayCell(arr, [FuncCall(main, [])])])])]))]))
+])

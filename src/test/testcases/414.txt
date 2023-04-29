@@ -1,0 +1,8 @@
+Program([
+	VarDecl(i, IntegerType)
+	FuncDecl(shalala, AutoType, [InheritParam(x, AutoType), Param(y, IntegerType), InheritParam(alpha, AutoType), InheritParam(z, IntegerType)], None, BlockStmt([WhileStmt(BooleanLit(True), BlockStmt([BreakStmt(), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(!=, Id(i), IntegerLit(100)), BinExpr(+, IntegerLit(5), IntegerLit(1)), BreakStmt())]))]))
+	FuncDecl(main, VoidType, [], bds, BlockStmt([WhileStmt(BooleanLit(True), BlockStmt([BreakStmt(), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(!=, Id(b), IntegerLit(100)), BinExpr(+, IntegerLit(5), IntegerLit(1)), CallStmt(main, ))]))]))
+	FuncDecl(bds, AutoType, [Param(c, IntegerType), Param(a, IntegerType), InheritParam(b, IntegerType)], shalala, BlockStmt([ForStmt(AssignStmt(Id(x), IntegerLit(1)), BinExpr(<=, Id(i), IntegerLit(100)), BinExpr(+, IntegerLit(5), IntegerLit(1)), CallStmt(main, )), ReturnStmt(Id(a))]))
+	VarDecl(PPLissohard, IntegerType, FuncCall(shalala, [IntegerLit(1), IntegerLit(2), BinExpr(*, FuncCall(shalala, [IntegerLit(1), IntegerLit(2), FloatLit(3), IntegerLit(4)]), Id(i)), IntegerLit(1)]))
+	VarDecl(trythis, IntegerType, BinExpr(%, FuncCall(shalala, [IntegerLit(1), IntegerLit(2), FloatLit(3), IntegerLit(4)]), IntegerLit(2)))
+])

@@ -1,0 +1,5 @@
+
+        a:boolean = !a;
+        b:boolean = !false;
+        b:boolean = !arr[true];
+        

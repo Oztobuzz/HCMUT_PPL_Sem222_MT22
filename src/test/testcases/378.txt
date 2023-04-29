@@ -1,0 +1,39 @@
+
+        // Variable declarations
+        a: integer = 1_2_3_4;
+        b: float = 1_2_3.0011E+1;
+        c: string = "true\"false\n\t\"True\\False";
+        d: array[1_2] of boolean = {true, "faLse", a::b, c};
+        __01, id_09, True : auto = 1, {1,2,3}, "str\"in\'g";
+        //*function decls*//
+        
+        func: function auto (inherit a:integer, out b: float, inherit out _0c: array[0] of string){
+            for (d[foo(arr[0])] = (d[0]*a)/b||c%(!false), "string" != "\"\"", arr[foo(a&&b||c)] )
+                foo(arr[0]);
+            break;
+        }
+
+        /*more function*///*/
+        foo: function array[0] of boolean(){
+            while (arr[0] <= foo(arr[1_2, func(1.2e+3)]))
+                if (count(arr) % (a||b&&c/d) == 0) continue;
+                else 
+                    if (a+b%c(true&&bar(arr[foo(3::4)]&&(!false+(-2))))) {
+                        arr[1, foo(2), arr[9], 1_2, .e-12] = arr[1, foo(2), arr[9], 1_2, .e-12];
+                    }
+                    else return func("string\t\"inner\b\f\"\nanother \\ line");
+                foo();
+        }
+        
+        main: function void(){
+            do{
+                for (foo = arr[arr[1,2]], (a&&b+12-!2)/12, 1)
+                    if (a+b%c(true&&bar(arr[foo(3::4)]&&(!false+(-2))))) continue;
+                    else break;
+                    while (count(arr) % (a||b&&c/d) == 0){
+                        //nullable
+                    }
+            }while(a+b%c(true&&bar(arr[foo(3::4)]&&(!false+(-2)))));
+            return;
+        }
+        

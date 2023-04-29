@@ -1,0 +1,6 @@
+
+        main : function void () {
+            int_var = 1_2 * (.e-3 + a)/b % 2;
+            bool_var = a > b&&!c;
+        }
+        

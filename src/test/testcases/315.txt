@@ -1,0 +1,5 @@
+
+        func: function string (pa1 : float){}
+        func: function string (pa1 : float, inherit pa2:auto){}
+        func: function string (pa1 : float, inherit pa2:auto, out pa3:string, inherit out pa4: array[2,3] of integer){}
+        

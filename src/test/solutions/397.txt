@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [OutParam(n, IntegerType), InheritParam(x, BooleanType)], None, BlockStmt([IfStmt(UnExpr(!, Id(x)), BlockStmt([CallStmt(foo, Id(x)), AssignStmt(Id(n), BinExpr(+, Id(n), IntegerLit(1))), VarDecl(y, IntegerType, IntegerLit(10)), BlockStmt([BreakStmt()])]), BlockStmt([CallStmt(writeInt, Id(y)), ContinueStmt(), BlockStmt([CallStmt(print, Id(contin))])])), ReturnStmt()]))
+])

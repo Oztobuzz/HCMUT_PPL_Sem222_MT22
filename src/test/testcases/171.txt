@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(bds, IntegerType, [Param(a, IntegerType), InheritParam(b, IntegerType)], None, BlockStmt([ReturnStmt(Id(a))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([]))
+])

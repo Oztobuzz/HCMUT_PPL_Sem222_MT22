@@ -1,0 +1,10 @@
+
+        main: function void() {}
+        foo: function integer(n: boolean) {
+            a = a[a[0]+b[a[2] + c[0]]] + a[1] + a[5];  
+            for (i = 1, i <= 100, i+1) write(testcase);
+            continue;
+            break;
+            return a[b[2] + c[2]];
+        }
+        

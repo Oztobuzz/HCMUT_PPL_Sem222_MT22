@@ -1,0 +1,6 @@
+
+        func: function integer() {}
+        foo: function auto() {}
+        bar: function void() inherit foo {}
+        foobar: function array[1_2] of float () inherit bar {}
+        

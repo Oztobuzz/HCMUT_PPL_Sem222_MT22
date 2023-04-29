@@ -1,0 +1,4 @@
+
+        a: integer = foo(1);
+        a: integer = bar(1, 2_2.e-02, false, "string");
+        

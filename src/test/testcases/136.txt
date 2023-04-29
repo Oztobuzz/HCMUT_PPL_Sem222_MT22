@@ -1,0 +1,4 @@
+a: string = "abc";
+        d,b,c : float = 1,2,3;
+        aa,bb,cc,dd: boolean = a==3, 2==3, !true, arr[0,2];
+        

@@ -1,0 +1,6 @@
+
+                f1: function void() {
+                        x: auto = x + x;
+                        x = 12;
+                }
+                

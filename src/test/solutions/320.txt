@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, IntegerType, FuncCall(foo, [IntegerLit(1)]))
+	VarDecl(a, IntegerType, FuncCall(bar, [IntegerLit(1), FloatLit(0.22), BooleanLit(False), StringLit(string)]))
+])

@@ -1,0 +1,14 @@
+
+        all: auto;
+
+        foo: function auto (out arr: array[4] of string, incr: integer){
+            for (i=0, i<=4, i+1)
+                arr[i] = (arr[i]+incr)*(4&&a)%2;
+        }
+
+        main: function void(){
+            a: integer = 0;
+            b: array[1_2] of float = {1.1, .E-3, 1_1_2.002E+2};
+            return foo(b, a);
+        }
+        

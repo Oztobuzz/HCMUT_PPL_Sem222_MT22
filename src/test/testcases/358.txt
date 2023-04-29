@@ -1,0 +1,18 @@
+
+        main : function void () {
+            if (1) {
+                if (2)
+                    if (3)
+                        if (4) {}
+                        else return;
+            }
+            else {
+                if (2)
+                    if (3)
+                    {
+                        a=b==c;
+                        continue;
+                    }
+            }
+        }
+        

@@ -1,0 +1,3 @@
+a : boolean = {1_2, .E-003, false, "string"};
+        a : boolean = {a+b, _40 == c, !false, "string\nline"};
+        

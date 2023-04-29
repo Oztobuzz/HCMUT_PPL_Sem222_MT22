@@ -1,0 +1,3 @@
+Program([
+	VarDecl(a, IntegerType, FuncCall(bar, [Id(a), Id(b), Id(c), ArrayCell(ar, [IntegerLit(1), IntegerLit(2)]), ArrayCell(arr, [IntegerLit(0), IntegerLit(12)]), BinExpr(+, Id(a), Id(b)), BinExpr(==, Id(a), Id(b))]))
+])

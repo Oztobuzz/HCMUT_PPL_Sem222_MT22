@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, IntegerType, [], None, BlockStmt([VarDecl(isBad, BooleanType, BooleanLit(True)), DoWhileStmt(BinExpr(==, Id(isBad), BooleanLit(True)), BlockStmt([DoWhileStmt(BinExpr(==, Id(isBad), BooleanLit(True)), BlockStmt([DoWhileStmt(BinExpr(==, Id(isBad), BooleanLit(True)), BlockStmt([IfStmt(BinExpr(==, FuncCall(rand, [IntegerLit(1), IntegerLit(200)]), IntegerLit(69)), BlockStmt([AssignStmt(Id(isBad), BooleanLit(False))]))]))]))]))]))
+])

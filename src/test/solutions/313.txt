@@ -1,0 +1,10 @@
+Program([
+	VarDecl(a, StringType, Id(z))
+	VarDecl(a, FloatType, IntegerLit(1))
+	VarDecl(b, FloatType, IntegerLit(2))
+	VarDecl(c, FloatType, IntegerLit(3))
+	VarDecl(a, BooleanType, BinExpr(+, Id(a), Id(b)))
+	VarDecl(b, BooleanType, BinExpr(==, IntegerLit(2), IntegerLit(3)))
+	VarDecl(c, BooleanType, UnExpr(!, BooleanLit(True)))
+	VarDecl(d, BooleanType, ArrayCell(arr, [IntegerLit(0), IntegerLit(2)]))
+])

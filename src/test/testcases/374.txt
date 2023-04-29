@@ -1,0 +1,8 @@
+
+        main: function void(){
+            a: integer = 0; 
+            {
+                inner = a;
+            }
+        }
+        

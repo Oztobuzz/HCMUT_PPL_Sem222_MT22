@@ -1,0 +1,10 @@
+
+                main: function void() {
+                a : array[2,3] of integer = {{1,2,5},{1 ,2, 3}};
+                a : boolean = {a+b, _40 == c, !false, "string\nline"};
+        
+                }
+                f1: function auto(x: float, y: float, z: float) {
+                        return x + y + z;
+                }
+                

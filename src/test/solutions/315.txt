@@ -1,0 +1,5 @@
+Program([
+	FuncDecl(func, StringType, [Param(pa1, FloatType)], None, BlockStmt([]))
+	FuncDecl(func, StringType, [Param(pa1, FloatType), InheritParam(pa2, AutoType)], None, BlockStmt([]))
+	FuncDecl(func, StringType, [Param(pa1, FloatType), InheritParam(pa2, AutoType), OutParam(pa3, StringType), InheritOutParam(pa4, ArrayType([2, 3], IntegerType))], None, BlockStmt([]))
+])

@@ -1,0 +1,5 @@
+
+        a:array[0] of float = {{1,2}, {arr[0,1], .e-2}, {{"s1"}, {"\"s2\""}}}; /*test arr lit*/
+        b:string = "string1"::arra[2,foo(arr[1]),arr[1_2]];
+        c:auto = ((a==arr[0])!=(c<(true<=e)))>(1.2>=foo(foo(9)));
+        

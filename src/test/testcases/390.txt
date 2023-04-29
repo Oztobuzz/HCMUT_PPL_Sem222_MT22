@@ -1,0 +1,9 @@
+
+        a: integer = 1;
+        b,c: float = 2.0, 10e-10;
+        d,e,f: string = "str1", "str\n2\t3", "string\"Inner\'\n\"";
+        g,h,i,j: boolean = true, false, false, true;
+        k, l, m: auto;
+        n, o: array[3] of integer = {1,2},{1,2};
+        p: array[0] of string;
+        

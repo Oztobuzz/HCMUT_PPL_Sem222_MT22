@@ -1,0 +1,173 @@
+###TYPE:
+IntegerType()
+FloatType()
+BooleanType()
+StringType()
+ArrayType(): # dimensions: List[int], typ: AtomicType
+AutoType()
+VoidType()
+NumType(): can be FloatType or IntegerType
+
+###KIND:
+Variable()
+Parameter()
+Function()
+
+
+###EXPRESSION:
+class LHS(Expr): #Abstract class
+class BinExpr(Expr): #op:str, left:Expr, right:Expr
+class UnExpr(Expr): #op:str, val:Expr
+class Id(LHS): #name:str
+class ArrayCell(LHS): #name:str, cell:List[Expr] this is idxOp
+class IntegerLit(Expr): #val:int
+class FloatLit(Expr): #val:float
+class StringLit(Expr): #val:str
+class BooleanLit(Expr): #val:bool
+class ArrayLit(Expr): #explist:List[Expr]
+class FuncCall(Expr): #name:str, args: List[Expr]
+
+
+
+
+###STATEMENTS:
+class AssignStmt(Stmt): #lhs:LHS, rhs: Expr
+class BlockStmt(Stmt): #body: List[Stmt or VarDecl]
+class IfStmt(Stmt): #cond:Expr, tstmt:Stmt, fstmt:Stmt or None = None
+class ForStmt(Stmt): #init:AssignStmt, cond:Expr, upd:Expr, stmt:Stmt
+class WhileStmt(Stmt): #cond:Expr, stmt:BlockStmt
+class DoWhileStmt(Stmt): #cond:Expr, stmt:BlockStmt
+BreakStmt()
+ContinueStmt()
+class ReturnStmt(Stmt): #expr:Expr or None = None
+class CallStmt(Stmt): #name:str, args:List[Expr]
+
+
+#Operator: 
+Int can be considered as FLoat
+BooleanType: ! && || == !=
+IntegerType (Exclusive):  % == != 
+Arithmetic: + - * /  
+Relational: > >= < <=  (== != int only)
+StringType: ::
+
+
+Index operator [,]: return type of ArrayLit
+Index operator is ArrayCell
+
+Sign - Unary: return int if int else float
+Arithmetic: return float if both operands Int else FLoat
+Logical: return BooleanType
+Relational: return BooleanType
+String: return StringType
+
+Unary:
+Index operator [,] Unary Postfix Left
+Sign - Unary Prefix Right
+Logical ! Unary Prefix Right
+
+
+###DECLARATIONS:
+class VarDecl(Decl): #name:str, typ:Type, init:Expr or None = None
+class ParamDecl(Decl): #name:str, typ:Type, out: bool = False, inherit: bool = False
+class FuncDecl(Decl): #name:str, return_type:Type, params:List[ParamDecl], inherit:str or None, body:BlockStmt
+
+
+###PROGRAM:
+class Program(AST): #decls:List[Decl]
+
+
+
+Special_function:
+readInteger() Read an integer number from keyboard and return it.
+printInteger(anArg: integer) Write an integer number to the screen.
+readFloat() Read an float number from keyboard and return it.
+writeFloat(anArg: float) Write an float number to the screen.
+readBoolean() Read an boolean value from keyboard and return it.
+printBoolean(anArg: boolean) Write an boolean value to the screen.
+readString() Read an string from keyboard and return it.
+printString(anArg: string) Write an string to the screen.
+super(<expr-list>) Call the parent function with the list of expression as paramaters.
+preventDefault() Prevent default parent function to be called.
+
+
+
+Error:
+class Redeclared(StaticError):
+    def __init__(self, kind: Kind, identifier: str):
+        self.kind = kind
+        self.identifier = identifier
+
+
+class Undeclared(StaticError):
+    def __init__(self, kind: Kind, name: str):
+        self.kind = kind
+        self.name = name
+
+
+class Invalid(StaticError):
+    def __init__(self, kind: Kind, name: str):
+        self.kind = kind
+        self.name = name
+
+
+class TypeMismatchInExpression(StaticError):
+    def __init__(self, expr):
+        self.expr = expr
+
+
+class TypeMismatchInStatement(StaticError):
+    def __init__(self, stmt):
+        self.stmt = stmt
+
+
+class MustInLoop(StaticError):
+    def __init__(self, stmt):
+        self.stmt = stmt
+
+
+class IllegalArrayLiteral(StaticError):
+    def __init__(self, literal):
+        self.literal = literal
+
+
+InvalidStatementInFunction():
+    def __init__(self, function_name: str):
+        self.function_name = function_name
+
+
+class NoEntryPoint(StaticError):
+    def __str__(self):
+        return "No entry point"
+
+
+
+4rum:
+
+1. Đối với lời gọi hàm super thì mình sẽ quăng lỗi TypeMisMatchInExpression(<error arg>) có thể rỗng.
+
+2. Đối với lời gọi hàm bình thường thì mình sử dụng quy tắc Mục 3.4 ý 3 assignment 3.
+
+3. Đối với ràng buộc kiểu thì mình sẽ cho phép chuyển kiểu ngầm định giữa float và int. Ví dụ foo(1,2) có thể sử dụng cho foo(a: int, b: float)
+
+4. Khi lấy prototype ta không quăng lỗi mà chỉ là lấy ra tên và danh sách đối số.
+
+5. Trường hợp auto được init bằng một auto khác là được cho phép và chúng ta không có lỗi type cannot be inferred  để bắt nên ta bỏ qua trường hợp này trong testcase, tức là nếu có thì không lỗi.
+
+6.  Về việc đi qua thân hàm khi thừa kế như thế nào thì chúng ta sẽ làm như sau: 
+
++ Khi cha được khai báo trước ta sẽ là như bình thường đó là kiểm tra param của hàm cha như bình thường(ở đây redeclare hay undecl đều bắt kể cả tham số). 
+
++ Nếu hàm cha khai báo sau thì chúng ta kiểm tra sự tồn tại của hàm cha và kiểu khi ta gọi hàm super(). Nếu trường hợp hàm cha có 2 tham số cùng tên và cả 2 cùng inhert thì ta quăng lỗi redeclare ở đây.
+
++ Trường hợp khác thì ta làm như bình thường
+
+7. Khi khai báo cùng tên nhưng khác kiểu trong 1 scope ta sẽ áp dụng những điều mô tả trong mục 3.1 assignment 3. Là second kind nha.
+
+8. Chuyển đổi ngầm định giữa int và float là cho phép trong toàn bài tập lớn lần này.
+
+9. Các operand's được mô tả float/int thì cả 2 vế đều có thể là 1 trong 2.
+
+Thầy mong các bạn thông cảm vì sự nhọc nhằn trong câu trả lời vì thầy nhiều lúc đọc không kỹ ví dụ của các bạn nên trả lời chưa đúng. Các bạn sẽ đặt câu hỏi trong thread mới đối với các trường hợp khác trên.
+
+Tại vì số lượng câu hỏi khá lớn nêu các bạn sẽ đặt lại câu hỏi mới chứ không reply thread cũ. Khi đặt câu hỏi trong câu hỏi các bạn ghi chú giúp thầy là mục nào trong và thread nào nếu câu trả lời của thầy là chưa chính xác.   

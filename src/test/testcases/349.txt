@@ -1,0 +1,6 @@
+
+        main : function void () {
+            ret = foo(1*2/(3-a));
+            idx = lst[1*2+foo(a)];
+        }
+        

@@ -1,0 +1,6 @@
+
+        main : function void () {
+            midx = lst[id[1,2], id[3,4], 5];
+            mmidx = lst[lv1[1,2], lv1[3, lv2[4, lv3[5]]]];
+        }
+        

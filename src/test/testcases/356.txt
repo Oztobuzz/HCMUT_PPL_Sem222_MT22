@@ -1,0 +1,8 @@
+main: function void() {}
+            foo: function string(n: string) {
+                a = "abc" + "abc";  
+                for (i = 1, i <= 100, i+1) write(testcase);
+                a = {a + foo(3),-b,c[0]} + power(-a);
+                if (!true && (true && !false + -abc)) return a;
+                return {a,-b,b % c};
+            }

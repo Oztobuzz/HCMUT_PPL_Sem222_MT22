@@ -1,0 +1,5 @@
+Program([
+	VarDecl(i, IntegerType)
+	FuncDecl(bds, VoidType, [Param(a, IntegerType), InheritParam(b, IntegerType)], None, BlockStmt([ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(<=, Id(i), IntegerLit(100)), BinExpr(+, Id(i), IntegerLit(1)), CallStmt(write, StringLit(testcase))), ReturnStmt(Id(a))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([]))
+])

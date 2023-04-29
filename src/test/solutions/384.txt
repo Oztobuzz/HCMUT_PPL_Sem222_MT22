@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(return_string, StringType, [], None, BlockStmt([ReturnStmt(StringLit(hello world))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, ArrayType([2], StringType), ArrayLit([FuncCall(foo, []), FuncCall(foo, [])])), VarDecl(i, IntegerType, IntegerLit(0)), WhileStmt(BinExpr(<, Id(i), IntegerLit(2)), BlockStmt([CallStmt(print, ArrayCell(a, [Id(i)])), IfStmt(BinExpr(==, Id(i), IntegerLit(1)), BlockStmt([AssignStmt(Id(i), IntegerLit(0)), BreakStmt()])), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))]))]))
+])

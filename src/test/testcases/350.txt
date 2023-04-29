@@ -1,0 +1,6 @@
+
+        main : function void () {
+            mret = foo(1, "str", foo(3,4,5), {1,2});
+            eret = foo();
+        }
+        

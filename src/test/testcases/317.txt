@@ -1,0 +1,8 @@
+func: function string (pa1 : float, out pa2: boolean){
+            a:integer = pa1;
+            if (a <= 3.E-2) return true;
+            else {
+                a = 0;
+                return false;
+            }
+        }

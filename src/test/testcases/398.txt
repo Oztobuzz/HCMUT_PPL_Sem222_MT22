@@ -1,0 +1,8 @@
+
+        main: function void(out n: integer, inherit x: boolean) inherit _f_o_12
+        {
+            a = "abc"::"cdf";
+            a = a[0]::b[5];
+            a = (a[0] + b[0]) :: abc;
+        }
+        

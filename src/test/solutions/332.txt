@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, IntegerType, BinExpr(==, Id(a), Id(b))), VarDecl(b, BooleanType, BinExpr(==, Id(a), BinExpr(==, Id(b), Id(c)))), VarDecl(c, BooleanType, BinExpr(==, BinExpr(==, Id(a), Id(b)), Id(c)))]))
+])

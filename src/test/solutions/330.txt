@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, AutoType, BinExpr(+, ArrayCell(arr, [IntegerLit(0)]), FuncCall(foo, [IntegerLit(3)])))
+	VarDecl(b, IntegerType, BinExpr(/, BinExpr(+, ArrayCell(arr, [IntegerLit(1), IntegerLit(2)]), ArrayCell(arr, [IntegerLit(0), IntegerLit(20)])), BinExpr(+, FuncCall(foo, [IntegerLit(1)]), FuncCall(bar, []))))
+])

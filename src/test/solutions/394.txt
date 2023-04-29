@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, BooleanType, BinExpr(!=, BinExpr(&&, BinExpr(==, Id(a), Id(b)), BinExpr(!=, BinExpr(||, BinExpr(!=, Id(f), Id(r)), Id(c)), BinExpr(&&, FuncCall(foo, []), Id(d)))), ArrayCell(var, [IntegerLit(0)])))]))
+])

@@ -1,0 +1,3 @@
+a, _bc, ___90: integer;
+        a, ___, __c__: array[1_2, 2, 3] of string;
+        

@@ -1,0 +1,5 @@
+
+        main : function void () {
+            foo(a*foo("string"/(a-arr[foo()])%2), b, 2_2.E-2);
+        }
+        

@@ -1,0 +1,8 @@
+
+        main : function void () {
+            for (ar[foo(false)] = b*a, 1-2<3*!true, a) 
+                a=2;
+            for (ar[foo(false)] = b*a, 1-2<3*!true, a) 
+                a=2;
+        }
+        

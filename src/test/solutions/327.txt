@@ -1,0 +1,5 @@
+Program([
+	VarDecl(a, ArrayType([0], FloatType), ArrayLit([ArrayLit([IntegerLit(1), IntegerLit(2)]), ArrayLit([ArrayCell(arr, [IntegerLit(0), IntegerLit(1)]), FloatLit(0.0)]), ArrayLit([ArrayLit([StringLit(s1)]), ArrayLit([StringLit(\"s2\")])])]))
+	VarDecl(b, StringType, BinExpr(::, StringLit(string1), ArrayCell(arra, [IntegerLit(2), FuncCall(foo, [ArrayCell(arr, [IntegerLit(1)])]), ArrayCell(arr, [IntegerLit(12)])])))
+	VarDecl(c, AutoType, BinExpr(>, BinExpr(!=, BinExpr(==, Id(a), ArrayCell(arr, [IntegerLit(0)])), BinExpr(<, Id(c), BinExpr(<=, BooleanLit(True), Id(e)))), BinExpr(>=, FloatLit(1.2), FuncCall(foo, [FuncCall(foo, [IntegerLit(9)])]))))
+])

@@ -1,0 +1,3 @@
+Program([
+	VarDecl(a, BooleanType, BinExpr(&&, BinExpr(||, BinExpr(&&, Id(a), Id(b)), BooleanLit(True)), BinExpr(>=, Id(a), BinExpr(||, Id(b), BinExpr(==, Id(c), Id(d))))))
+])

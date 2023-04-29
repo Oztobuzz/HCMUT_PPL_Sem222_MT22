@@ -1,0 +1,6 @@
+
+                func: function integer() {a : array[2,3] of integer = {{1,2,5},{1 ,2, 3}};}
+                foo: function auto() {a : array[2,3] of integer = {{1,2,5},{1 ,2, 3}};}
+                bar: function void() inherit foo {a : array[2,3] of integer = {{1,2,5},{1 ,2, 3}};}
+                foobar: function array[1_2] of float () inherit bar {a : array[2,3] of integer = {{1,2,5},{1 ,2, 3}};}
+                

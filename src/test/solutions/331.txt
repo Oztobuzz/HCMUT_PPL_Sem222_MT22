@@ -1,0 +1,4 @@
+Program([
+	VarDecl(c, FloatType, ArrayCell(arr, [BinExpr(/, IntegerLit(2), BinExpr(+, IntegerLit(2), BinExpr(*, IntegerLit(2), BinExpr(%, IntegerLit(2), BinExpr(/, IntegerLit(2), IntegerLit(0))))))]))
+	VarDecl(d, AutoType, FuncCall(func, [BinExpr(/, IntegerLit(2), BinExpr(+, IntegerLit(2), BinExpr(*, IntegerLit(2), BinExpr(%, IntegerLit(2), BinExpr(/, IntegerLit(2), IntegerLit(0))))))]))
+])

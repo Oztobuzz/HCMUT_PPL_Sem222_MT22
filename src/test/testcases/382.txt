@@ -1,0 +1,5 @@
+
+    testfunc: function void (inherit out a: array[1] of boolean) {
+        if(a[1, 2] == "true")
+            super(printInteger(a[1*2, 3+4]), x%2);
+    }

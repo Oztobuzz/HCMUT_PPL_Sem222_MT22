@@ -1,0 +1,19 @@
+
+        main: function void(out n: integer, inherit x: boolean) {
+            if (!x) {
+                foo(x);
+                n = n+1;
+                y: integer = 10;
+                {
+                    break;
+                }
+            } else {
+                writeInt(y);
+                continue;
+                {
+                    print(contin);
+                }
+            }
+            return;
+        }
+        

@@ -1,0 +1,6 @@
+Program([
+	VarDecl(a, BooleanType, UnExpr(!, UnExpr(!, UnExpr(!, UnExpr(!, UnExpr(!, UnExpr(!, BooleanLit(True))))))))
+	VarDecl(b, BooleanType, UnExpr(-, UnExpr(-, UnExpr(-, UnExpr(-, IntegerLit(2))))))
+	VarDecl(c, StringType, UnExpr(!, UnExpr(!, UnExpr(-, IntegerLit(2)))))
+	VarDecl(d, StringType, UnExpr(-, UnExpr(-, UnExpr(!, IntegerLit(2)))))
+])

@@ -1,0 +1,7 @@
+
+        main:function void(){
+            a:integer = a==b;
+            b:boolean = a==(b==c);
+            c:boolean = (a==b)==c;
+        }
+        

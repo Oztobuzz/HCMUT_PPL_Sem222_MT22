@@ -1,0 +1,11 @@
+
+        main : function void () {
+            for (a=2, a==b, a+b*2%3)
+                continue;
+            for (a=2, a==b, a+b*2%3)
+            {
+                c: integer = true;
+                b = (b+1)/2 || c;
+            }
+        }
+        

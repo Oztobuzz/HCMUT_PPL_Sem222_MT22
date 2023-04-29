@@ -1,0 +1,3 @@
+
+        a:auto = -2 / !false :: b<=c || (true!=fal) % 3;
+        

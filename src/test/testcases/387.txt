@@ -1,0 +1,17 @@
+
+        main: function integer(){
+            isBad: boolean = true;
+            do{
+                do{
+                    do{
+                        if (rand(1,200) == 69){
+                            isBad = false;
+                        }
+                    }
+                    while (isBad == true);
+                }
+                while (isBad == true);  
+            }
+            while (isBad == true);
+        }
+        

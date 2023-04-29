@@ -1,0 +1,6 @@
+Program([
+	VarDecl(_var_, AutoType, StringLit(string\"Inner\"))
+	VarDecl(a, IntegerType, IntegerLit(1))
+	VarDecl(b, IntegerType, BinExpr(+, Id(a), Id(b)))
+	VarDecl(___90, IntegerType, BinExpr(==, Id(a), Id(b)))
+])

@@ -1,0 +1,5 @@
+Program([
+	VarDecl(all, AutoType)
+	FuncDecl(foo, AutoType, [OutParam(arr, ArrayType([4], StringType)), Param(incr, IntegerType)], None, BlockStmt([ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<=, Id(i), IntegerLit(4)), BinExpr(+, Id(i), IntegerLit(1)), AssignStmt(ArrayCell(arr, [Id(i)]), BinExpr(%, BinExpr(*, BinExpr(+, ArrayCell(arr, [Id(i)]), Id(incr)), BinExpr(&&, IntegerLit(4), Id(a))), IntegerLit(2))))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, IntegerType, IntegerLit(0)), VarDecl(b, ArrayType([12], FloatType), ArrayLit([FloatLit(1.1), FloatLit(0.0), FloatLit(11200.2)])), ReturnStmt(FuncCall(foo, [Id(b), Id(a)]))]))
+])

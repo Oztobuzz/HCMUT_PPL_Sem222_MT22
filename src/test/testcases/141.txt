@@ -1,0 +1,19 @@
+
+        foo:function auto() {
+            return 123_323_3.e-23;
+        }
+        bar: function float() {
+            return foo();
+        }
+        main:function void(){
+            a: integer = 23%2+23-33_2%90;
+            z: boolean = true && false;
+            b: float = 23_2_3_23.2e23 - 23_2_2.E+23 - foo() * bar();
+            printInteger(a);
+            writeFloat(b);
+            if(z==true) {
+                print("TRUE");
+            }
+            return;
+        }
+        

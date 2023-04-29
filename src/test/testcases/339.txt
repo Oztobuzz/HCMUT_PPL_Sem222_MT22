@@ -1,0 +1,6 @@
+
+        a:boolean = !!!!!!true;
+        b:boolean = ----2;
+        c:string = !!-2;
+        d:string = --(!2);
+        

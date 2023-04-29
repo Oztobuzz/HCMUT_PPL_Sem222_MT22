@@ -1,0 +1,11 @@
+
+        main : function void () {
+            for (ar[foo(false)] = b*a, 1-2<3*!true, a) 
+            {
+                b=c;
+                continue;
+                return;
+                return 2*2%2/2;
+            }
+        }
+        

@@ -1,0 +1,7 @@
+
+                fico: function auto(b: float, c: auto) {
+                        do {
+                        z: integer = "rasputin";
+                        } while (z + 1 != 2);
+                }
+                

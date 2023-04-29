@@ -1,0 +1,8 @@
+
+                main: function auto(x: float, y: float, z: float) {
+                        return 1;
+                        return "abc";
+                        return true;
+                        a: string = true;
+                }
+                

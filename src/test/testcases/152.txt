@@ -1,0 +1,7 @@
+
+                main: function void(b: auto, c: auto) {
+                        x: auto = x + 10;
+                        y: string;
+                        y = b * c;
+                }
+                

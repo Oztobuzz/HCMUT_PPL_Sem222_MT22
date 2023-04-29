@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([]))
+	FuncDecl(foo, IntegerType, [Param(n, BooleanType)], None, BlockStmt([AssignStmt(Id(a), BinExpr(+, BinExpr(+, ArrayCell(a, [BinExpr(+, ArrayCell(a, [IntegerLit(0)]), ArrayCell(b, [BinExpr(+, ArrayCell(a, [IntegerLit(2)]), ArrayCell(c, [IntegerLit(0)]))]))]), ArrayCell(a, [IntegerLit(1)])), ArrayCell(a, [IntegerLit(5)]))), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(<=, Id(i), IntegerLit(100)), BinExpr(+, Id(i), IntegerLit(1)), CallStmt(write, Id(testcase))), ContinueStmt(), BreakStmt(), ReturnStmt(ArrayCell(a, [BinExpr(+, ArrayCell(b, [IntegerLit(2)]), ArrayCell(c, [IntegerLit(2)]))]))]))
+])

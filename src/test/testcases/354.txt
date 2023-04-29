@@ -1,0 +1,5 @@
+
+        main : function void () {
+            if (a*b<c&&!true%2) a=foo(arr[a]);
+        }
+        

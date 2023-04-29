@@ -1,0 +1,1 @@
+Invalid statement in function: VarDecl(a, ArrayType([2, 3], IntegerType), ArrayLit([ArrayLit([IntegerLit(1), IntegerLit(2), IntegerLit(5)]), ArrayLit([IntegerLit(1), IntegerLit(2), IntegerLit(3)])]))

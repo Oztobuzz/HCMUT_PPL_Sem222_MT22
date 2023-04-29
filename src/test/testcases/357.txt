@@ -1,0 +1,13 @@
+
+        main : function void () {
+            if (arr[0]) {
+                a=foo(arr[a]);
+                return a;
+            }
+            else {
+                a=b;
+                b=!false;
+                continue;
+            }
+        }
+        

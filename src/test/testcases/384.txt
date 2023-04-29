@@ -1,0 +1,17 @@
+
+        return_string: function string() {
+            return "hello world";
+        }
+        main:function void(){
+            a: array [2] of string = {foo(), foo()};
+            i: integer = 0;
+            while(i<2){
+                print(a[i]);
+                if(i == 1) {
+                    i = 0;
+                    break;
+                }
+            i = i+1;
+            }
+        }
+        

@@ -1,0 +1,5 @@
+Program([
+	VarDecl(count, IntegerType, IntegerLit(0))
+	VarDecl(loop_cond, BooleanType, BooleanLit(True))
+	FuncDecl(main, VoidType, [], None, BlockStmt([WhileStmt(Id(loop_cond), IfStmt(BinExpr(==, BinExpr(%, Id(count), IntegerLit(12)), IntegerLit(0)), DoWhileStmt(BinExpr(<=, Id(count), BinExpr(||, BooleanLit(True), BooleanLit(False))), BlockStmt([ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<=, Id(i), IntegerLit(4)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(==, BinExpr(%, Id(i), IntegerLit(2)), IntegerLit(0)), AssignStmt(ArrayCell(arr, [Id(i)]), BinExpr(%, BinExpr(*, BinExpr(+, ArrayCell(arr, [Id(i)]), Id(incr)), BinExpr(&&, IntegerLit(4), Id(a))), IntegerLit(2))), BlockStmt([CallStmt(foo, StringLit(string\"), Id(_0id), StringLit(string\t\"))]))]))])))), ReturnStmt(ArrayCell(arr, [FuncCall(main, [FuncCall(foo, [ArrayCell(arr, [FuncCall(main, [])])])])]))]))
+])

@@ -1,0 +1,6 @@
+Program([
+	VarDecl(d, BooleanType, BinExpr(||, BinExpr(&&, BooleanLit(True), BooleanLit(False)), ArrayCell(arr, [IntegerLit(0)])))
+	VarDecl(e, AutoType, BinExpr(+, BinExpr(-, IntegerLit(1), FuncCall(foo, [BinExpr(*, IntegerLit(2), Id(a))])), BinExpr(%, ArrayCell(arr, [BinExpr(/, Id(b), IntegerLit(2))]), IntegerLit(3))))
+	VarDecl(f, BooleanType, UnExpr(!, FuncCall(bar, [])))
+	VarDecl(g, IntegerType, ArrayCell(arr, [UnExpr(-, IntegerLit(2))]))
+])

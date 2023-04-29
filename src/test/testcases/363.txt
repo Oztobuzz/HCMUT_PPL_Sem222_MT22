@@ -1,0 +1,8 @@
+
+        main : function void () {
+            for (a=1, a!=2, a+1*b) 
+                for (b=b, b, b) 
+                    for (c=c, c, c) 
+                        for (d=d, d, d) continue;   
+        }
+        

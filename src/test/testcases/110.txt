@@ -1,0 +1,12 @@
+
+                f1: function auto() {
+                        if (true) {
+                        return 1;
+                        return "abc";
+                        }
+                        else return 2;
+                        
+                        return true;
+                        return "abc";
+                }
+                
